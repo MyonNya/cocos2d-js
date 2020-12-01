@@ -89,15 +89,15 @@ var GameOver = cc.Layer.extend({
         menu.x = winSize.width / 2;
         menu.y = 300;
 
-        var lbScore = new cc.LabelTTF("Your Score:"+MW.SCORE,"Arial Bold",24);
+        var lbScore = new cc.LabelTTF("Điểm của bạn:"+MW.SCORE,"Arial Bold",24);
         lbScore.x = 240;
         lbScore.y = 370;
         lbScore.color = cc.color(255,0,0);
         this.addChild(lbScore,10);
 
-        var b1 = new cc.LabelTTF("Download Cocos2d-JS","Arial",21);
+        var b1 = new cc.LabelTTF("Download Cocos2d-X","Arial",21);
         b1.setColor(cc.color(MW.FONTCOLOR));
-        var b2 = new cc.LabelTTF("Github Repository","Arial",21);
+        var b2 = new cc.LabelTTF("Github download","Arial",21);
         b2.setColor(cc.color(MW.FONTCOLOR));
         var menu1 = new cc.MenuItemLabel(b1,function(){
             window.location.href = "http://www.cocos2d-x.org/download";

@@ -98,7 +98,7 @@ var GameLayer = cc.Layer.extend({
         this.screenRect = cc.rect(0, 0, winSize.width, winSize.height + 10);
 
         // score
-        this.lbScore = new cc.LabelBMFont("Score: 0", res.arial_14_fnt);
+        this.lbScore = new cc.LabelBMFont("Điểm: 0", res.arial_14_fnt);
         this.lbScore.attr({
             anchorX: 1,
             anchorY: 0,
@@ -296,7 +296,7 @@ var GameLayer = cc.Layer.extend({
             this._tmpScore += 1;
         }
         this._lbLife.setString(MW.LIFE + '');
-        this.lbScore.setString("Score: " + this._tmpScore);
+        this.lbScore.setString("Điem: " + this._tmpScore);
     },
     collide:function (a, b) {
 	    var ax = a.x, ay = a.y, bx = b.x, by = b.y;
