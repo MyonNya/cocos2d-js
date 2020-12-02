@@ -98,7 +98,7 @@ var GameLayer = cc.Layer.extend({
         this.screenRect = cc.rect(0, 0, winSize.width, winSize.height + 10);
 
         // score
-        this.lbScore = new cc.LabelBMFont("Điểm: 0", res.arial_14_fnt);
+        this.lbScore = new cc.LabelBMFont("Diem: 0", res.arial_14_fnt);
         this.lbScore.attr({
             anchorX: 1,
             anchorY: 0,
