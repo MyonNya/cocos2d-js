@@ -296,7 +296,7 @@ var GameLayer = cc.Layer.extend({
             this._tmpScore += 1;
         }
         this._lbLife.setString(MW.LIFE + '');
-        this.lbScore.setString("Diem: " + this._tmpScore);
+        this.lbScore.setString("DIEM: " + this._tmpScore);
     },
     collide:function (a, b) {
 	    var ax = a.x, ay = a.y, bx = b.x, by = b.y;
