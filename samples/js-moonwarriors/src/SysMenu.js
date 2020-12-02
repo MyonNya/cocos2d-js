@@ -100,7 +100,7 @@ var SysMenu = cc.Layer.extend({
         menu.x = winSize.width / 2;
         menu.y = winSize.height / 2 - 140;
 
-        var label = new cc.LabelTTF("Power by Cocos2d-JS", "Arial", 21);
+        var label = new cc.LabelTTF("Power by Cocos2d", "Arial", 21);
         label.setColor(cc.color(MW.FONTCOLOR));
         this.addChild(label, 1);
         label.x = winSize.width  / 2;
