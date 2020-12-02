@@ -77,9 +77,9 @@ var SysMenu = cc.Layer.extend({
         var gameSettingsSelected = new cc.Sprite(res.menu_png, cc.rect(singalWidth, singalHeight, singalWidth, singalHeight));
         var gameSettingsDisabled = new cc.Sprite(res.menu_png, cc.rect(singalWidth, singalHeight * 2, singalWidth, singalHeight));
 
-        var aboutNormal = new cc.Sprite(res.menu_png, cc.rect(singalWidth * 2, 0, singalWidth, singalHeight));
-        var aboutSelected = new cc.Sprite(res.menu_png, cc.rect(singalWidth * 2, singalHeight, singalWidth, singalHeight));
-        var aboutDisabled = new cc.Sprite(res.menu_png, cc.rect(singalWidth * 2, singalHeight * 2, singalWidth, singalHeight));
+        //var aboutNormal = new cc.Sprite(res.menu_png, cc.rect(singalWidth * 2, 0, singalWidth, singalHeight));
+        //var aboutSelected = new cc.Sprite(res.menu_png, cc.rect(singalWidth * 2, singalHeight, singalWidth, singalHeight));
+        //var aboutDisabled = new cc.Sprite(res.menu_png, cc.rect(singalWidth * 2, singalHeight * 2, singalWidth, singalHeight));
         var flare = new cc.Sprite(res.flare_jpg);
         this.addChild(flare, 15, 10);
         flare.visible = false;
@@ -89,12 +89,12 @@ var SysMenu = cc.Layer.extend({
             flareEffect(flare, this, this.onNewGame);
         }.bind(this));
         var gameSettings = new cc.MenuItemSprite(gameSettingsNormal, gameSettingsSelected, gameSettingsDisabled, this.onSettings, this);
-        var about = new cc.MenuItemSprite(aboutNormal, aboutSelected, aboutDisabled, this.onAbout, this);
+        //var about = new cc.MenuItemSprite(aboutNormal, aboutSelected, aboutDisabled, this.onAbout, this);
         newGame.scale = MW.SCALE;
         gameSettings.scale = MW.SCALE;
-        about.scale = MW.SCALE;
+        //about.scale = MW.SCALE;
 
-        var menu = new cc.Menu(newGame, gameSettings, about);
+        var menu = new cc.Menu(newGame, gameSettings/*, about*/);
         menu.alignItemsVerticallyWithPadding(15);
         this.addChild(menu, 1, 2);
         menu.x = winSize.width / 2;
@@ -138,12 +138,12 @@ var SysMenu = cc.Layer.extend({
         scene.addChild(new SettingsLayer());
 	    cc.director.runScene(new cc.TransitionFade(1.2, scene));
     },
-    onAbout:function (pSender) {
+    /*onAbout:function (pSender) {
         this.onButtonEffect();
         var scene = new cc.Scene();
         scene.addChild(new AboutLayer());
 	    cc.director.runScene(new cc.TransitionFade(1.2, scene));
-    },
+    },*/
     update:function () {
         if (this._ship.y > 750) {
             this._ship.x = Math.random() * winSize.width;
