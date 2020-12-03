@@ -50,13 +50,13 @@ var SettingsLayer = cc.Layer.extend({
 
 
         cc.MenuItemFont.setFontName("Segoe UI");
-        cc.MenuItemFont.setFontSize(16);
+        cc.MenuItemFont.setFontSize(18);
         var title1 = new cc.MenuItemFont("Âm thanh");
         title1.setEnabled(false);
         title1.setColor(cc.color(MW.FONTCOLOR));
 
         cc.MenuItemFont.setFontName("Segoe UI");
-        cc.MenuItemFont.setFontSize(24);
+        cc.MenuItemFont.setFontSize(26);
         var item1 = new cc.MenuItemToggle(
             new cc.MenuItemFont("Mở"),new cc.MenuItemFont("Tắt"));
         item1.setCallback(this.onSoundControl );
@@ -65,13 +65,13 @@ var SettingsLayer = cc.Layer.extend({
         item1.setSelectedIndex(state);
 
         cc.MenuItemFont.setFontName("Segoe UI");
-        cc.MenuItemFont.setFontSize(16);
+        cc.MenuItemFont.setFontSize(18);
         var title2 = new cc.MenuItemFont("Chế độ");
         title2.setEnabled(false);
         title2.setColor(cc.color(MW.FONTCOLOR));
 
         cc.MenuItemFont.setFontName("Segoe UI");
-        cc.MenuItemFont.setFontSize(24);
+        cc.MenuItemFont.setFontSize(26);
         var item2 = new cc.MenuItemToggle(
             new cc.MenuItemFont("Dễ"),
             new cc.MenuItemFont("Bình thường"),
@@ -81,7 +81,7 @@ var SettingsLayer = cc.Layer.extend({
 
 
         cc.MenuItemFont.setFontName("Segoe UI");
-        cc.MenuItemFont.setFontSize(24);
+        cc.MenuItemFont.setFontSize(26);
         var label = new cc.LabelTTF("Quay về", "Arial", 20);
         label.setColor(cc.color(MW.FONTCOLOR));
         var back = new cc.MenuItemLabel(label, this.onBackCallback);
