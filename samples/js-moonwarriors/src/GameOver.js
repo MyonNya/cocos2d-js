@@ -63,7 +63,7 @@ var GameOver = cc.Layer.extend({
         lbScore.color = cc.color(255,0,0);
         this.addChild(lbScore,10);
 
-        var b1 = new cc.LabelTTF("Download Cocos2d-X","Arial",21);
+        /*var b1 = new cc.LabelTTF("Download Cocos2d-X","Arial",21);
         b1.setColor(cc.color(MW.FONTCOLOR));
         var b2 = new cc.LabelTTF("Github download","Arial",21);
         b2.setColor(cc.color(MW.FONTCOLOR));
@@ -77,7 +77,7 @@ var GameOver = cc.Layer.extend({
         cocos2dMenu.alignItemsVerticallyWithPadding(10);
         cocos2dMenu.x = 240;
         cocos2dMenu.y = 120;
-        this.addChild(cocos2dMenu);
+        this.addChild(cocos2dMenu);*/
 
 
         if(MW.SOUND){

@@ -31,9 +31,9 @@ MW.GameController = cc.Class.extend({
     option:function () {
 
     },
-    about:function () {
+    /*about:function () {
 
-    }
+    }*/
 });
 
 MW.GameController.getInstance = function () {

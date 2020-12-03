@@ -6,7 +6,7 @@ var GameControlMenu = cc.Layer.extend({
     init:function () {
         cc.MenuItemFont.setFontSize(24);
         cc.MenuItemFont.setFontName("Arial");
-        var systemMenu = new cc.MenuItemFont("Main Menu", this.onSysMenu);
+        var systemMenu = new cc.MenuItemFont("Ngừng chơi", this.onSysMenu);
         systemMenu.setColor(cc.color(MW.FONTCOLOR));
         var menu = new cc.Menu(systemMenu);
         menu.x = 0;
