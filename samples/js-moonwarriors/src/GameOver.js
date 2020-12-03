@@ -63,23 +63,6 @@ var GameOver = cc.Layer.extend({
         lbScore.color = cc.color(255,0,0);
         this.addChild(lbScore,10);
 
-        /*var b1 = new cc.LabelTTF("Download Cocos2d-X","Arial",21);
-        b1.setColor(cc.color(MW.FONTCOLOR));
-        var b2 = new cc.LabelTTF("Github download","Arial",21);
-        b2.setColor(cc.color(MW.FONTCOLOR));
-        var menu1 = new cc.MenuItemLabel(b1,function(){
-            window.location.href = "http://www.cocos2d-x.org/download";
-        });
-        var menu2 = new cc.MenuItemLabel(b2,function(){
-            window.location.href = "https://github.com/cocos2d/cocos2d-js";
-        });
-        var cocos2dMenu = new cc.Menu(menu1,menu2);
-        cocos2dMenu.alignItemsVerticallyWithPadding(10);
-        cocos2dMenu.x = 240;
-        cocos2dMenu.y = 120;
-        this.addChild(cocos2dMenu);*/
-
-
         if(MW.SOUND){
             cc.audioEngine.playMusic(cc.sys.os == cc.sys.OS_WP8 || cc.sys.os == cc.sys.OS_WINRT ? res.mainMainMusic_wav : res.mainMainMusic_mp3, true);
         }
